@@ -5,40 +5,21 @@
         .controller('MyController', [ '$scope', function($scope){
           $scope.projects = [
             {
-              title:"Pomodoro Clock",
-              description:"A pomodoro clock designed to help you stay focused on work. Adjustable work session and break times in a convenient UI. ",
+              title:"Twitch Status App",
+              description:"An application that displays a list of your favorite Twitch streamers and their current status. Uses JavaScript, HTML, CSS, AngularJS, Bootstrap",
               url:"#",
               background:"content/placeholder1.png"
             },
             {
-              title:"Tic Tac Toe",
-              description:'Try your hand at Tic Tac Toe against the Minimax algorithm. It hasn\'t been beaten yet. ',
+              title:"Weather App",
+              description:'An application that displays the weather at your current location. Uses HTML, CSS, JavaScript, AngularJS',
               url:"#",
               background:"content/placeholder1.png"
             },
             {
-              title:'Simon',
-              description:'Test your memory with a game of Simon. Can be set to strict mode which will set you back to the beginning if you make a mistake. ',
-              url:"#",
-              background:"content/placeholder1.png"
-              
-            },
-            {
-              title:'Wiki-Viewer',
-              description:'Search wikipedia for interesting articles',
-              url:"#",
-              background:"content/placeholder1.png"
-            },
-            {
-              title:'Javascript Calculator',
-              description:'A functional online calculator made with Javascript and JQuery',
-              url:"#",
-              background:"content/placeholder1.png"
-            },
-            {
-              title:'Quote Generator',
-              description:'Generates quotes using a free API. Find a quote you like and post it to Twitter',
-              url:"#",
+              title:'Random Quote Machine',
+              description:'Application that generates quotes using a free API. If you find a quote you like, easily post it to Twitter! Uses JavaScript, AngularJS, HTML, CSS, Bootstrap',
+              url:"https://codepen.io/maiganpierce/full/GMebGO/",
               background:"content/placeholder1.png"
             }]
         }

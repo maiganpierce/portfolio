@@ -21,7 +21,7 @@
   font-size:1.75rem;
 }
 
-.img{
+.img {
   width:50%
   border-radius:4px;
   margin:0 0 0 10px;
@@ -33,6 +33,7 @@
   justify-content:center;
   align-items:center;
 }
+
 .right-bar{
   display:flex;
   flex-wrap:wrap;
@@ -110,9 +111,6 @@ a:hover{
 }
 .section{
   width:100%;
-  /*font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 2px;*/
   color: #383736;
   padding-bottom:30px;
   display:flex;
