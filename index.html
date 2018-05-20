@@ -1,68 +1,118 @@
-<!doctype html>
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Portfolio - Maigan Pierce</title>
-		<meta name="Maigan Pierce">
-		<link type="text/css"  rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/regular.css" integrity="sha384-R7FIq3bpFaYzR4ogOiz75MKHyuVK0iHja8gmH1DHlZSq4tT/78gKAa7nl4PJD7GP" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css" integrity="sha384-KtmfosZaF4BaDBojD9RXBSrq5pNEO79xGiggBxf8tsX+w2dBRpVW5o0BPto2Rb2F" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css" integrity="sha384-8WwquHbb2jqa7gKWSoAwbJBV2Q+/rQRss9UXL5wlvXOZfSodONmVnifo/+5xJIWX" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	</head>
-	
-	<body>
-		<div class="container">
+  <title></title>
 
-		<!--BootStrap Nav-bar-->
-		<nav class="navbar navbar-light navbar-expand-md">
-			<a class="navbar-brand" href="#">Maigan Pierce</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="nav navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" target="_blank" href="https://www.dropbox.com/s/atd3gt2o0e0wg45/Resume_MaiganPierce.pdf?dl=0">Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Code Samples</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+  <script src="Scripts/angular.min.js"></script> 
+  <script src="https://use.fontawesome.com/89d521f3d3.js"></script> 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="app/main.js"></script>
 
-		<div id="page-content" class="text-center">
-			<p id="summary">Software Engineer with experience in Windows Desktop Application Development (C#, WinForms, .NET Framework) and Web Development in the MEAN stack (MongoDB, Express, AngularJS, Node.js). Also familiar with frameworks such as React and Xamarin.</p>
-			<p id="resume">
-				You can view my resume <a href="https://www.dropbox.com/s/atd3gt2o0e0wg45/Resume_MaiganPierce.pdf?dl=0">here</a>.
-			</p>
-			<p id="contact">To get in contact, you can  
-				<a href="mailto:maiganpierce@gmail.com">shoot me an email</a>
-				or add me on any of my social media accounts. 
-				I'm always looking to connect with like-minded people.
-			</p>
-		
-			<a href="https://www.linkedin.com/in/maigan-pierce/">
-				<i class="fab fa-linkedin fa-2x"></i></a>
-			<a href="https://github.com/maiganpierce">
-				<i class="fab fa-github-square fa-2x"></i></a>
-			<a href="https://plus.google.com/u/0/100271786384119092916">
-				<i class="fab fa-google-plus-square fa-2x"></i></a>
-		</div>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 
-		<script src="js/scripts.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		</div>
-	</body>
+</head>
+<body ng-controller="MyController">
+  <div class="left-nav">
+    <ul class="menu">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+  <div class="container-fluid">
+    <div class="header">
+      <div class="header-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2000px-Circle-icons-computer.svg.png" width="50%">
+        <h1 id="about">MAIGAN PIERCE</h1>
+        <p>SOFTWARE ENGINEER | BIRMINGHAM, ALABAMA</p>
+      </div>
+      <div class="blurb-wrap col-md-12">
+        <div class="about-blurb col-md-9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et magna vitae purus lobortis maximus. Maecenas in vulputate tellus. Vivamus pulvinar tincidunt neque, vel maximus dui lobortis pharetra. Ut at gravida diam, sed sollicitudin magna. Cras mauris tortor, vehicula et arcu ac, euismod blandit sapien. Quisque vel nibh eleifend, cursus turpis eget, efficitur purus.
+          </p>
+          <p>
+            Sed mauris odio, rutrum eu lorem sollicitudin, cursus fringilla eros. Nam auctor nunc lectus, id bibendum arcu scelerisque quis. Morbi sed placerat ipsum. Etiam et mollis enim. Maecenas eleifend, nulla ac aliquam tincidunt, ante lectus suscipit lorem, sed ullamcorper ipsum sapien in tortor. Donec porttitor molestie risus a rutrum. Nullam et scelerisque metus, vel molestie lorem. Vivamus scelerisque faucibus dolor, nec lobortis libero faucibus quis. Nullam vitae felis non quam lobortis malesuada non quis augue.
+          </p>
 
-	<footer class="container center fixed-bottom">
-		Made in Birmingham, Alabama, USA by Maigan Pierce :)
-	</footer>
-</html>
+        </div>
+        <div class="right-bar col-md-3">
+
+          <a href="#">
+            <div class="project hdn" id="resume">
+              <span class="glyphicon glyphicon-file"></span>
+            </div>
+            <p>RESUME</p>
+          </a>
+
+          <a href="#">
+            <div class="project hdn" id="resume">
+              <span class="fa fa-linkedin"></span>
+            </div>
+            <p>LINKEDIN</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="projects" class="section col-md-12" ng-controller="MyController">
+      <div class="header-wrap">
+        <h1>PROJECTS</h1>
+        <p>Examples of projects and work I have completed so far</p>
+      </div>
+      <div class="project-container col-md-12">
+        <div class="project hdn col-md-4" ng-mouseenter="showdiv=!showdiv" ng-mouseleave="showdiv=!showdiv" ng-repeat="item in projects" ng-attr-style="background:url({{item.background}})">
+          {{item.title}}
+          <p ng-class="{'default':!showdiv, 'rollup':showdiv}">
+            {{item.description}}
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="header-wrap">
+        <h1>CONTACT</h1>
+        <p>Currently available for full-time or contract work. Drop me a line!</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="link-section">
+          <p>maiganpierce@gmail.com</p>
+          <p>Birmingham, AL</p>
+          <ul>
+            <li><a href="#">LinkedIn </a>/</li>
+            <li><a href="#"> Twitter </a>/</li>
+            <li><a href="#"> freeCodeCamp</a></li>
+          </ul>
+
+        </div>
+        <form>
+          <div class="form-group">
+            <div class="input-wrap">
+              <span class="glyphicon glyphicon-user"></span>
+              <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+            </div>
+            <div class="input-wrap">
+              <span class="glyphicon glyphicon-envelope"></span>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+            </div>
+            <div class="input-wrap">
+              <span class="glyphicon glyphicon-pencil"></span>
+              <textarea type="message" class="form-control" id="emailMessage" placeholder="Your message" rows="5">
+              </textarea>
+            </div>
+            <button id="submit" type="submit" class="project hdn">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="footer">
+      <p>Coded By Maigan Pierce</p>
+    </div>
+  </body>
+  </html>
