@@ -70,7 +70,7 @@
         <p>Code Samples</p>
       </div>
       <div class="project-container col-md-12">
-        <div class="project hdn col-md-4" ng-mouseenter="showdiv=!showdiv" ng-mouseleave="showdiv=!showdiv" ng-repeat="item in projects" ng-attr-style="background:url({{item.background}})">
+        <div class="project hdn col-md-3" ng-mouseenter="showdiv=!showdiv" ng-mouseleave="showdiv=!showdiv" ng-repeat="item in projects" ng-click="onClickProject(item.url)" ng-attr-style="background:url({{item.background}})">
           {{item.title}}
           <p ng-class="{'default':!showdiv, 'rollup':showdiv}">
             {{item.description}}

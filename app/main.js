@@ -1,29 +1,33 @@
 ﻿(function () {
-   'use strict';
+	'use strict';
 
-    angular.module('app', [])
-        .controller('MyController', [ '$scope', function($scope){
-          $scope.projects = [
-            {
-              title:"Twitch Status App",
-              description:"An application that displays a list of your favorite Twitch streamers and their current status. Uses JavaScript, HTML, CSS, AngularJS, Bootstrap",
-              url:"https://maiganpierce.github.io/Twitch-Status-App/",
-              background:"content/placeholder1.png"
-            },
-            {
-              title:"Weather App",
-              description:'An application that displays the weather at your current location. Uses HTML, CSS, JavaScript, AngularJS',
-              url:"#",
-              background:"content/placeholder1.png"
-            },
-            {
-              title:'Random Quote Machine',
-              description:'Application that generates quotes using a free API. If you find a quote you like, easily post it to Twitter! Uses JavaScript, AngularJS, HTML, CSS, Bootstrap',
-              url:"https://codepen.io/maiganpierce/full/GMebGO/",
-              background:"content/placeholder1.png"
-            }]
-        }
-      
-    ]);
+	angular.module('app', [])
+		.controller('MyController', [ '$scope', '$window', function($scope, $window)
+		{
+			$scope.projects = [
+			{
+				title:"Twitch Status App",
+				description:"Uses JavaScript, HTML, CSS, AngularJS, Bootstrap",
+				url:"https://maiganpierce.github.io/Twitch-Status-App/",
+				background:"content/twitch-status-app.PNG"
+			},
+			{
+				title:"Weather App",
+				description:'Uses HTML, CSS, JavaScript',
+				url:"https://codepen.io/maiganpierce/full/veMmgw/",
+				background:"content/weather-app.PNG"
+			},
+			{
+				title:'Random Quote Machine',
+				description:'Uses JavaScript, AngularJS, HTML, CSS, Bootstrap',
+				url:"https://codepen.io/maiganpierce/full/GMebGO/",
+				background:"content/quote-machine.PNG"
+			}];
+
+			$scope.onClickProject = function(url){
+				$window.open(url, '_blank');
+			};
+
+		}]);
 
 })();
