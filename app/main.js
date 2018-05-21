@@ -7,7 +7,7 @@
             {
               title:"Twitch Status App",
               description:"An application that displays a list of your favorite Twitch streamers and their current status. Uses JavaScript, HTML, CSS, AngularJS, Bootstrap",
-              url:"#",
+              url:"https://maiganpierce.github.io/Twitch-Status-App/",
               background:"content/placeholder1.png"
             },
             {
